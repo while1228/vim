@@ -81,7 +81,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 "Plugin 'gmarik/Vundle.vim'
 Plugin 'tobyS/pdv'
-"Plugin 'tobyS/vmustache'
+Plugin 'tobyS/vmustache'
 "Plugin 'SirVer/ultisnips'
 
 " The following are examples of different formats supported.

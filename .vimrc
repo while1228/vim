@@ -21,7 +21,7 @@ set nobackup
 "set noswapfile
 "
 "突出现实当前行列
-"set cursorline
+set cursorline
 "set cursorcolumn
 
 "设置匹配模式 类似当输入一个左括号时会匹配相应的那个右括号
@@ -82,7 +82,7 @@ call vundle#begin()
 "Plugin 'gmarik/Vundle.vim'
 Plugin 'tobyS/pdv'
 Plugin 'tobyS/vmustache'
-"Plugin 'SirVer/ultisnips'
+Plugin 'SirVer/ultisnips'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -120,9 +120,9 @@ filetype plugin indent on    " required
 
 "配置 pdv ，启用ultisnips 才能使用 pdv#DocumentWithSnip
 "let g:pdv_template_dir = "~/.vim/bundle/pdv/templates_snip"
-"nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 let g:pdv_template_dir = $HOME."/.vim/bundle/pdv/templates_snip"
-nnoremap <buffer> <C-p> :call pdv#DocumentCurrentLine()<CR>
+"nnoremap <buffer> <C-p> :call pdv#DocumentCurrentLine()<CR>
+nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 
 :imap <F2> <CR>Date: <Esc>:read !date<CR>
 ":imap <F2> <CR>Date: <Esc>:read !date<CR>kJ

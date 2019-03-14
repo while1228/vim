@@ -84,6 +84,9 @@ Plugin 'tobyS/pdv'
 Plugin 'tobyS/vmustache'
 Plugin 'SirVer/ultisnips'
 
+Plugin 'morhetz/gruvbox'
+Plugin 'scrooloose/nerdtree'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -126,6 +129,10 @@ nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 
 :imap <F2> <CR>Date: <Esc>:read !date<CR>
 ":imap <F2> <CR>Date: <Esc>:read !date<CR>kJ
+colorscheme gruvbox
+set background=dark
+
+map <F4> :NERDTree<cr>
 
 
 

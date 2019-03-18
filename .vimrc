@@ -33,7 +33,7 @@ set cindent
 
 "开启语法高亮功能
 "syntax enable
-"syntax on
+syntax on
 "
 "指定配色方案为256色
 "set t_Co=256
